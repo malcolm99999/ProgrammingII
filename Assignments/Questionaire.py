@@ -4,12 +4,12 @@
 # 3. Modify this file to ask Ms. Ifft at least three questions you would like to know about her.
 # 4. Add your modified version of this file to your Google Assignment submission.
 # ------------------------------------------------------------------------------------------------
-"""
 
+"""
 This module asks the user a series of questions.
 When the user answers, the questions and answers are written to a file called questionnaire_responses.txt
-
-
+"""
+"""
 print("\nWelcome to the Get to Know You Questionaire!\n")
 
 # open the file questionnaire_responses.txt in the same directory as this code, and add their name to it
@@ -60,8 +60,8 @@ if introvert_extrovert_explanation:
     questionnaire_file.write(", " + introvert_extrovert_explanation)
 
 questionnaire_file.close()
-
 """
+
 
 print("Hello Ms. Ifft. Here are my response questions.")
 print(" ")
