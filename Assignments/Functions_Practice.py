@@ -15,15 +15,15 @@ def diceroll():
     print(random.randint(1,6))
 diceroll()
 """
-
+"""
 #2.
 import random
 
-def jokelist():
-    print(random.choice in {"What do you call a cow with no legs? ground beef.", "Where are cows from? Moo Zealand"})
-
-jokelist()
-
+def joke_list():
+    joke = ["What do you call a cow with no legs? ground beef.", "Where are cows from? Moo Zealand"]
+    print(random.choice(joke))
+joke_list()
+"""
 
 """
 ** Functions with parameter(s), but no return value **
@@ -35,8 +35,22 @@ jokelist()
     It should sum up all the numbers in the list and print the sum.
 
 """
-
-
+"""
+def max(num_1,num_2,num_3):
+    if num_1 > num_2 and num_1 > num_3:
+        return num_1
+    elif num_2 > num_1 and num_2 > num_3:
+        return num_2
+    else:
+        return num_3
+max(5, 7, 10)
+"""
+"""
+def max(x,y,z):
+    nums = [x,y,z]
+    nums.sort()
+    print(nums[-1])
+"""
 """
 ** Functions with parameter(s) and a return value **
 1.  Write a function called in_range that will check whether or not a number falls within a range.
@@ -49,7 +63,9 @@ jokelist()
 3.  Write a function called is_palindrome that will accept a string and return True if it is a palindrome,
     and False if it is not.
 """
-
+def is_palindrome():
+    entered = input("Enter a palindrome ")
+    palindrome = ["racecar", "mom", "dad",]
 
 """
 If you're finished, look up and read about what default parameters are. Then try one of the following function
