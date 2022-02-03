@@ -10,6 +10,7 @@ n = 5
 for x in range(1, 11):
  print(str(x) + ' * ' + str(n) + ' = ' + str(n * x))
  """""
+"""
 # a function example to use with the debugger
 import random
 def random_greeting(name):
@@ -20,30 +21,33 @@ random_greeting("Alberto")
 random_greeting("Jonah")
 random_greeting("Malcolm")
 random_greeting("Ryder")
-
+"""
 """
 # a warm up that shouldn't require the debugger
-greeting = input("Hello, possible pirate! What's the password?)
-if greeting in ["Arrr!"):
-print("Go away, pirate.")
-elif
-print("Greetings, hater of pirates!")
+greeting = input("Hello, possible pirate! What's the password? ")
+if greeting.lower() in ["Arrr!"]:
+ print("Go away, pirate.")
+else:
+ print("Greetings, hater of pirates!")
 """
+
 """
 # average calculation problem
-num_tests = input("How many test scores would you like to average: ")
+num_tests = int(input("How many test scores would you like to average: "))
 tests_sum = 0
 for i in range(num_tests):
  new_test = int(input("What is the test score: "))
- tests_sum = new_test
+ tests_sum = new_test + tests_sum
 print("The average is " + str(tests_sum/num_tests) + ".")
 """
+
+
 """
 def add_underscores(word):
  new_word = "_"
  for i in range(len(word)):
- new_word = word[i] + "_"
- print(new_word)
+  new_word = word[i] + "_"
+  print(new_word)
 phrase = "hello"
 add_underscores(phrase)
 """

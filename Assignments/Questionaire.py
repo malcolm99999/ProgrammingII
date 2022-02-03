@@ -62,7 +62,7 @@ if introvert_extrovert_explanation:
 questionnaire_file.close()
 """
 
-
+"""
 print("Hello Ms. Ifft. Here are my response questions.")
 print(" ")
 print("Question 1")
@@ -73,5 +73,5 @@ question2 = input("What is your favorite type of music/artist?: ")
 print(" ")
 print("Question 3")
 question3 = input("What is your favorite language of code to use? ")
-
+"""
 
