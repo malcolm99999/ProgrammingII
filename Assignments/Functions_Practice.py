@@ -20,7 +20,7 @@ diceroll()
 import random
 
 def joke_list():
-    joke = ["What do you call a cow with no legs? ground beef.", "Where are cows from? Moo Zealand"]
+    rand.joke = ["What do you call a cow with no legs? ground beef.", "Where are cows from? Moo Zealand"]
     print(random.choice(joke))
 joke_list()
 """
@@ -36,6 +36,7 @@ joke_list()
 
 """
 """
+1.
 def max(num_1,num_2,num_3):
     if num_1 > num_2 and num_1 > num_3:
         return num_1
@@ -46,6 +47,7 @@ def max(num_1,num_2,num_3):
 max(5, 7, 10)
 """
 """
+2.
 def max(x,y,z):
     nums = [x,y,z]
     nums.sort()
@@ -63,9 +65,28 @@ def max(x,y,z):
 3.  Write a function called is_palindrome that will accept a string and return True if it is a palindrome,
     and False if it is not.
 """
-def is_palindrome():
-    entered = input("Enter a palindrome ")
-    palindrome = ["racecar", "mom", "dad",]
+"""
+1.
+User_input = input("Pick a number. ")
+def in_range():
+    minmax = (min(0) and max(10))
+if User_input == minmax:
+    print("Works in the paramaters")
+"""
+"""
+numb = input("Chose a number ")
+def find_evens():
+    while True:
+        numlist = [2]
+        numlist.append(2)
+    if numb in numlist:
+        print("Your num is even")
+    else:
+        print("Your num is odd")
+"""
+
+
+
 
 """
 If you're finished, look up and read about what default parameters are. Then try one of the following function
@@ -76,3 +97,4 @@ challenges with default parameters:
     will use that greeting instead.
 2.  Write your own function using a good use case for default parameters :)
 """
+
