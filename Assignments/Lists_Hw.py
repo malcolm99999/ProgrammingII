@@ -33,10 +33,19 @@ at least one parameter that is a list, and that returns something meaningful.
 
 """
 
+
 num_list = []
 for i in range(5):
     num = input("Pick a number? ")
     num_list.append(num)
+def num_sort():
+    num_list.sort(reverse=True)
+def num_sum():
+    sum(num_list)
+print(num_sort)
+print(num_sum)
+
+
 """
 """
 Problem 1:
@@ -53,7 +62,7 @@ If the element does exist in the list, it should not append it and return False.
 """
 """
 color_list = ["daisy", "rose", "tulip"]
-def broad_list_function(flower_list):
+def unique_append(flower_list):
     new = input("Name anything for my broad list of colors: ")
     if new in (color_list):
         print("thats already in there")
@@ -80,6 +89,7 @@ Sorry.... but you're not allowed to use the max function.
 
 
 """
+"""
 def find_max(num_list):
     current_max = num_list[0]
     for i in range(len(num_list)):
@@ -89,12 +99,17 @@ def find_max(num_list):
 num_list = [1, 4, 8, 12]
 print(find_max(num_list))
 """
+"""
 Problem 3:
 
 Write a function called get_item that takes in a list and a (positive) index number as parameters. If the index number 
 is not out of range for the given list, return the list item at that index. Otherwise, return None. 
 """
-
+"""
+def get_item(the_list, index_num):
+    if index_num < len(the_list) and index_num >= len(the_list):
+        return the_list[index_num]
+"""
 
 """
 Problem 4:
