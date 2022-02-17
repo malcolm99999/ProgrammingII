@@ -31,20 +31,23 @@ at least one parameter that is a list, and that returns something meaningful.
 6. Produce min and max
 """
 
+
+
 """
 
 
-num_list = []
-for i in range(5):
-    num = input("Pick a number? ")
-    num_list.append(num)
-def num_sort():
+def num_operation():
+    num_list = []
+    for i in range(5):
+        num = int(input("Pick a number? "))
+        num_list.append(num)
     num_list.sort(reverse=True)
-def num_sum():
     sum(num_list)
-print(num_sort)
-print(num_sum)
-
+    print("Your sorted list is: " + str(num_list))
+    print("The sum of your list is: " + str(sum(num_list)))
+    print("The smallest number in your list is: " + str(min(num_list)))
+    print("The largest number in your list is: " + str(max(num_list)))
+num_operation()
 
 """
 """
@@ -60,15 +63,19 @@ If the element does exist in the list, it should not append it and return False.
 3.      else return true and append element to list
 
 """
+
 """
-color_list = ["daisy", "rose", "tulip"]
-def unique_append(flower_list):
-    new = input("Name anything for my broad list of colors: ")
-    if new in (color_list):
+def unique_append(broad_list, new):
+    if new in (broad_list):
         print("thats already in there")
+        return False
     else:
-        new.append(color_list)
-    print(color_list)
+        broad_list.append(new)
+        return True
+color_list = ["purple", "rose", "green"]
+
+unique_append(color_list, "green")
+print(color_list)
 """
 
 """
