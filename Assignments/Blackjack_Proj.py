@@ -3,7 +3,6 @@ I want to make a project that is blackjack against the computer, Over the break 
 """
 
 import random
-
 deck = 4* [2, 3, 4, 5, 6, 7, 8, 9, 10, "jack", "queen", "king", "ace"]
 player_hand = []
 dealer_hand = []
@@ -64,8 +63,9 @@ print(" ")
 print("ready?")
 start = input("")
 if start.lower() == "yes":
-    print("\n\n\n\n\n\n\n\n\n\n\n\n\n\n")
+    print("\n\n\n\n\n\n\n\n\n\n\n\n")
     deal()
+    print("You have $" + playercash)
     print("You were dealt: "  + str(min(player_hand)) + (" and ") + str(max(player_hand)))
     print(" ")
     playerq = input("would you like to hit or stay: ")
