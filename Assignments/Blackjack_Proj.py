@@ -49,7 +49,7 @@ def dealer_rules():
         print("Dealer hits")
         print("Dealer now has: " + int(sum(dealer_hand)))
     if sum(dealer_hand) >= 18:
-        stay(dealer_hand)
+        stay(dealer_hand)#
 
 
 print(" ")
