@@ -36,8 +36,9 @@ def determine_winner(player_hand, dealer_hand):
         print("bust, you lose")
     elif sum(dealer_hand) > 21:
         print("dealer bust")
-    elif sum(dealer_hand) > 21 and sum(player_hand) > 21:
+    elif sum(dealer_hand) > 21 or sum(player_hand) > 21:
         print("Bust, but dealer busted also")
+
 
 
 
