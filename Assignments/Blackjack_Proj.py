@@ -65,7 +65,6 @@ start = input("")
 if start.lower() == "yes":
     print("\n\n\n\n\n\n\n\n\n\n\n\n")
     deal()
-    print("You have $" + playercash)
     print("You were dealt: "  + str(min(player_hand)) + (" and ") + str(max(player_hand)))
     print(" ")
     playerq = input("would you like to hit or stay: ")
