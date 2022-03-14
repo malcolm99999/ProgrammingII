@@ -112,10 +112,13 @@ for letter in message:
     letter_map_dict.get()
     new_message = new_message 
 """
+"""
 def decoder(letter_map_dict):
     for letter in message:
         letter_map_dict.get(letter)
         letter_map_dict(message) + decoded_message
+"""
+
 
 decoded_message = ""
 
