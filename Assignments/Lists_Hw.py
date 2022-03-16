@@ -73,7 +73,6 @@ def unique_append(broad_list, new):
         broad_list.append(new)
         return True
 color_list = ["purple", "rose", "green"]
-
 unique_append(color_list, "green")
 print(color_list)
 """
