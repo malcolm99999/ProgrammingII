@@ -4,6 +4,12 @@ from pprint import pprint
 def find_in_dict(dict, stat):
     return dict.get("sport_career_hitting").get("queryResults").get("row").get(stat)
 
+""""
+I want to make my program possible to search up information of any baseball player in history and to get the basic 
+stats about this person. Because the current stats API is not active anymore, I decided to do career stats which do
+not change as much
+"""
+
 
 #if statements prints below
 def find_out():
