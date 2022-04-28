@@ -59,17 +59,15 @@ while True:
     response_list = user_response.split()
     player_api = requests.get( "http://lookup-service-prod.mlb.com/json/named.search_player_all.bam?sport_code='mlb'&active_sw='"+ y_or_n + "'&name_part='" + player_name +"%25'")
     data_dict = json.loads(player_api.text)
-    player_id = data_dict.get("search_player_all").get("queryResults").get("row").get("player_id")
-
-#making it so if there is no ID detected, output and try again
-    if player_id == ("none"):
-        print("player not found")
-
+    if data_dict.get("search_player_all").get('queryResults').get('totalSize') == "0":
+        print("Player not detected")
+    else:
+        player_id = data_dict.get("search_player_all").get("queryResults").get("row").get("player_id")
 #Going into second to get stats
-    hitting_statsapi = requests.get("http://lookup-service-prod.mlb.com/json/named.sport_career_hitting.bam?league_list_id='mlb'&game_type='R'&player_id='" + player_id + "'")
+        hitting_statsapi = requests.get("http://lookup-service-prod.mlb.com/json/named.sport_career_hitting.bam?league_list_id='mlb'&game_type='R'&player_id='" + player_id + "'")
     #pprint(json.loads(hitting_statsapi.text))
-    stats = json.loads(hitting_statsapi.text)
-    find_out()
+        stats = json.loads(hitting_statsapi.text)
+        find_out()
 #asking abt another player
     yes_or_no = input("Would you like to know about another player?: ")
     if yes_or_no.lower() == "no":
